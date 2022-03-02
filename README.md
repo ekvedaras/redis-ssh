@@ -10,7 +10,7 @@ Sets up a Redis connection inside an SSH tunnel.
 
 * `sshConfig` should be an object according to the `ssh2` package.
 * `redisConfig` should be an object according to the `redis` package.
-* Returns a Object, containing a `client` from the `redis` package and `close` function.
+* Returns an object, containing a `client` from the `redis` package and `close` function.
 
 
 ## Usage
@@ -26,8 +26,10 @@ async function main() {
       privateKey: fs.readFileSync('./*.pem'),
     },
     {
-      host: '',
-      port: 0,
+      socket: {
+        host: '',
+        port: 0,
+      },
       password: '',
     }
   );

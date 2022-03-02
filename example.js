@@ -6,8 +6,10 @@ async function main() {
       privateKey: fs.readFileSync('./*.pem'),
     },
     {
-      host: '',
-      port: 0,
+      socket: {
+        host: '',
+        port: 0,
+      },
       password: '',
     }
   );

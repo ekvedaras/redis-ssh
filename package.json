@@ -1,6 +1,6 @@
 {
   "name": "redis-ssh",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "redis ssh tunnel",
   "main": "index.js",
   "scripts": {
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolazj/redis-ssh.git"
+    "url": "git+https://github.com/ekvedaras/redis-ssh.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nicolazj/redis-ssh/issues"
+    "url": "https://github.com/ekvedaras/redis-ssh/issues"
   },
-  "homepage": "https://github.com/nicolazj/redis-ssh#readme",
+  "homepage": "https://github.com/ekvedaras/redis-ssh#readme",
   "dependencies": {
-    "redis": "^2.8.0",
-    "ssh2": "^0.5.5"
+    "redis": "^4.0.1",
+    "ssh2": "^1.6.0"
   }
 }

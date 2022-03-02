@@ -31,8 +31,11 @@ module.exports = {
     const server = await createServer(conn, redisConfig);
     const client = redis.createClient({
       ...redisConfig,
-      host: '127.0.0.1',
-      port: server.address().port,
+      socket: {
+        ...(redisConfig.socket ?? {}),
+        host: '127.0.0.1',
+        port: server.address().port,
+      },
     });
 
     return {
