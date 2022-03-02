@@ -19,6 +19,6 @@
   "homepage": "https://github.com/ekvedaras/redis-ssh#readme",
   "dependencies": {
     "redis": "^4.0.1",
-    "ssh2": "^1.6.0"
+    "ssh2": "^0.5.5"
   }
 }
